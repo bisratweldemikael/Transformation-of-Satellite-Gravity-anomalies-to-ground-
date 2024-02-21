@@ -9,7 +9,7 @@ Original file is located at
 
 # https://youtu.be/6pUSZgPJ3Yg
 """
-Satellite image to maps image translation ​using Pix2Pix GAN
+Satellite gravity to ground graavity image translation ​using Pix2Pix GAN
 
 Data from: http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz
 Also find other datasets here: http://efrosgans.eecs.berkeley.edu/pix2pix/datasets/
@@ -35,9 +35,9 @@ def load_images(path, size=(256, 512)):
             # convert to numpy array
             pixels = img_to_array(pixels)
             # split into satellite and map
-            sat_img, map_img = pixels[:, :256], pixels[:, 256:]
+            sat_img, grd_img = pixels[:, :256], pixels[:, 256:]
             src_list.append(sat_img)
-            tar_list.append(map_img)
+            tar_list.append(grd_img)
     return [asarray(src_list), asarray(tar_list)]
 
 # dataset path
