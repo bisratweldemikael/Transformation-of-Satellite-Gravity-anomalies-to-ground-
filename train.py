@@ -34,7 +34,7 @@ def load_images(path, size=(256, 512)):
             pixels = load_img(os.path.join(root, filename), target_size=size)
             # convert to numpy array
             pixels = img_to_array(pixels)
-            # split into satellite and map
+            # split into satellite and ground
             sat_img, grd_img = pixels[:, :256], pixels[:, 256:]
             src_list.append(sat_img)
             tar_list.append(grd_img)
