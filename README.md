@@ -1,6 +1,6 @@
 # Transformation-of-Satellite-Gravity-anomalies-to-ground-
 new repo
-# GeoTIFF to Ground Gravity Anomaly Pix2Pix
+# Generating a synthetic Ground Gravity Anomaly with Pix2Pix GAN
 
 This project aims to utilize the pix2pix Generative Adversarial Network (GAN) architecture for generating ground gravity anomaly maps from satellite gravity anomaly data. The pipeline involves data preparation steps followed by training a pix2pix model tailored for this specific image-to-image translation task.
 
